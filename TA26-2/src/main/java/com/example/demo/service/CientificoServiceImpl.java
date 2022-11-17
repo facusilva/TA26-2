@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.dao.ICientificoDAO;
 import com.example.demo.dto.Cientifico;
@@ -38,6 +39,7 @@ public class CientificoServiceImpl implements ICientificoService{
 	}
 
 	@Override
+	@Transactional
 	public void eliminarCientifico(String dni) {
 		iCientificoDAO.deleteByDni(dni);
 		
