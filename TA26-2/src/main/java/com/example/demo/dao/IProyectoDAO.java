@@ -8,4 +8,6 @@ public interface IProyectoDAO extends JpaRepository<Proyecto, Long>{
 
 	public Proyecto findById(String id);
 	
+	public Integer deleteById(String id);
+	
 }

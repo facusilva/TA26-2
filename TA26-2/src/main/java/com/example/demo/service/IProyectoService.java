@@ -17,5 +17,5 @@ public interface IProyectoService {
 	
 	public Proyecto actualizarProyecto(Proyecto Proyecto); //Actualiza datos del Proyecto UPDATE
 	
-	public void eliminarProyecto(Long id);//Elimina el Proyecto DELETE
+	public void eliminarProyecto(String id);//Elimina el Proyecto DELETE
 }

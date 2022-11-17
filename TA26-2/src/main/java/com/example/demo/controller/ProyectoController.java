@@ -67,7 +67,7 @@ public class ProyectoController {
 	
 	//borro el Proyecto indicado por el ID que llega en la variable del path
 	@DeleteMapping("/proyectos/{id}")
-	public void eleiminarProyecto(@PathVariable(name="id")Long id) {
+	public void eleiminarProyecto(@PathVariable(name="id")String id) {
 		ProyectoServiceImpl.eliminarProyecto(id);
 	}
 }

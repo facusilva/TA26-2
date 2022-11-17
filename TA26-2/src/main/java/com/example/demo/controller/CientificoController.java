@@ -67,6 +67,6 @@ public class CientificoController {
 	//borro el Cientifico indicado por el ID que llega en la variable del path
 	@DeleteMapping("/cientificos/{dni}")
 	public void eleiminarCientifico(@PathVariable(name="dni")String dni) {
-		CientificoServiceImpl.eliminarCientifico(dni);
+		CientificoServiceImpl.deleteByDni(dni);
 	}
 }

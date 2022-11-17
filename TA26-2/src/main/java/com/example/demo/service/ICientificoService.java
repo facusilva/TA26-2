@@ -17,5 +17,5 @@ public interface ICientificoService {
 	
 	public Cientifico actualizarCientifico(Cientifico Cientifico); //Actualiza datos del Cientifico UPDATE
 	
-	public void eliminarCientifico(String dni);//Elimina el Cientifico DELETE
+	public void deleteByDni(String dni);//Elimina el Cientifico DELETE
 }
